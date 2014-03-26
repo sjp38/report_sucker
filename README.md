@@ -1,6 +1,6 @@
 Report Sucker
 =============
-Nobody likes report, but should suck somebody. Report sucker sucks report
+Nobody likes report, but someone should suck it. Report sucker sucks report
 instead of you.
 
 Report Sucker is a simple tool helps writing odt template report.
