@@ -30,7 +30,35 @@ trans data consists in next template:
 <blank line with no whitespace n>
 ```
 
-for example, see `trans_rule_example` and `weekly_report_template.odt`.
+For example:
+```
+Main title
+Progress report 3rd Week, March 2014, Knights Of Round Table
+
+basic info
+Basic Information
+
+name bullet
+Name Sir. LANCELOT
+
+project bullet
+Contribution type and project
+
+project info
+Holy Grail Seeking(Contributor)
+
+Project abstraction table title
+Project abstraction
+
+Project abstraction contents
+1. Holy Grail is Holy Cup
+ - Journey to seek Holy Grail
+ - You're banging together two coconuts.
+ - Are you suggesting coconuts migrate?
+ - run away!!!
+```
+
+For more example, see `trans_rule_example` and `weekly_report_template.odt`.
 Then,
 `$ ./make_report.py weekly_report_template.odt test_out.odt trans_rule_example`
 and see `weekly_report_template.odt` and `test_out.odt` again.
