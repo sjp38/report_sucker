@@ -31,6 +31,9 @@ trans data consists in next template:
 ```
 
 for example, see `trans_rule_example` and `weekly_report_template.odt`.
+Then,
+`$ ./make_report.py weekly_report_template.odt test_out.odt trans_rule_example`
+and see `weekly_report_template.odt` and `test_out.odt` again.
 
 License
 -------
