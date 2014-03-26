@@ -28,19 +28,15 @@ def check_replace_elem(parent):
         list_.append(parent)
     for elem in list_:
         if elem.text:
-            print "text: ", elem.text
             elem.text = elem.text.lstrip()
             elem.text = elem.text.rstrip()
         if elem.text in trans_rule:
-            print "gotcha: ", elem.text
             new_texts = trans_rule[elem.text].split('\n')
             elem.text = new_texts[0]
-            print "change to ", elem.text
             for i in range(1, len(new_texts) - 1):
                 new_elem = copy.deepcopy(elem)
                 new_elem.text = new_texts[i]
                 parent.append(new_elem)
-                print "change to ", new_elem.text
         for child in list(elem):
             check_replace_elem(child)
 
@@ -69,11 +65,8 @@ if __name__ == "__main__":
     fakefile = StringIO.StringIO(raw_xml)
     tree = ElementTree.parse(fakefile).getroot()
 
-    print list(tree)
-
     for elem in list(tree):
         check_replace_elem(elem)
-#    quit()
 
     fakefile.close()
 
