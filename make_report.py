@@ -33,7 +33,7 @@ def check_replace_elem(parent):
         if elem.text in trans_rule:
             new_texts = trans_rule[elem.text].split('\n')
             elem.text = new_texts[0]
-            for i in range(1, len(new_texts) - 1):
+            for i in range(1, len(new_texts)):
                 new_elem = copy.deepcopy(elem)
                 new_elem.text = new_texts[i]
                 parent.append(new_elem)
